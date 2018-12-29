@@ -549,3 +549,138 @@ data				pandaleanstocode.Rproj		themes
 ]0;~/pandaleanstocodeAritras-MacBook-Pro:pandaleanstocode aritrabiswas$ git init .[K[K
 Reinitialized existing Git repository in /Users/aritrabiswas/pandaleanstocode/.git/
 ]0;~/pandaleanstocodeAritras-MacBook-Pro:pandaleanstocode aritrabiswas$ git add . 
+]0;~/pandaleanstocodeAritras-MacBook-Pro:pandaleanstocode aritrabiswas$ git commit -m "first commit"
+[master f1ac04e] first commit
+ 1 file changed, 248 insertions(+), 1 deletion(-)
+]0;~/pandaleanstocodeAritras-MacBook-Pro:pandaleanstocode aritrabiswas$ git remote add origin https://github.com/pandalearnstocode/pandalearnstoco de.github.io.git
+fatal: remote origin already exists.
+]0;~/pandaleanstocodeAritras-MacBook-Pro:pandaleanstocode aritrabiswas$ git push -u origin master
+Enumerating objects: 11, done.
+Counting objects:   9% (1/11)   Counting objects:  18% (2/11)   Counting objects:  27% (3/11)   Counting objects:  36% (4/11)   Counting objects:  45% (5/11)   Counting objects:  54% (6/11)   Counting objects:  63% (7/11)   Counting objects:  72% (8/11)   Counting objects:  81% (9/11)   Counting objects:  90% (10/11)   Counting objects: 100% (11/11)   Counting objects: 100% (11/11), done.
+Delta compression using up to 8 threads
+Compressing objects:  16% (1/6)   Compressing objects:  33% (2/6)   Compressing objects:  50% (3/6)   Compressing objects:  66% (4/6)   Compressing objects:  83% (5/6)   Compressing objects: 100% (6/6)   Compressing objects: 100% (6/6), done.
+Writing objects:  16% (1/6)   Writing objects:  33% (2/6)   Writing objects:  50% (3/6)   Writing objects:  66% (4/6)   Writing objects:  83% (5/6)   Writing objects: 100% (6/6)   Writing objects: 100% (6/6), 2.84 KiB | 2.84 MiB/s, done.
+Total 6 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/2)   [Kremote: Resolving deltas:  50% (1/2)   [Kremote: Resolving deltas: 100% (2/2)   [Kremote: Resolving deltas: 100% (2/2), completed with 2 local objects.[K
+To https://github.com/pandalearnstocode/website.git
+   c5e4b2d..f1ac04e  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+]0;~/pandaleanstocodeAritras-MacBook-Pro:pandaleanstocode aritrabiswas$ ls
+archetypes			googlea312a54ab7dd3d86.html	public
+config.toml			index.Rmd			resources
+content				layouts				static
+data				pandaleanstocode.Rproj		themes
+]0;~/pandaleanstocodeAritras-MacBook-Pro:pandaleanstocode aritrabiswas$ cd public/
+]0;~/pandaleanstocode/publicAritras-MacBook-Pro:public aritrabiswas$ cd public/ls[Kgit push -u origin masterremote add origin https://github.com/pandalearnstocode/pandalearnstocode.github.iio.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccommit -m "first commit"[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cadd . [K[2Pinit
+Initialized empty Git repository in /Users/aritrabiswas/pandaleanstocode/public/.git/
+]0;~/pandaleanstocode/publicAritras-MacBook-Pro:public aritrabiswas$ git initcd public/ls[Kgit push -u origin masterremote add origin https://github.com/pandalearnstocode/pandalearnstocode.github.iio.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccommit -m "first commit"[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cadd . [K
+]0;~/pandaleanstocode/publicAritras-MacBook-Pro:public aritrabiswas$ git add . [2Pinitcd public/ls[Kgit push -u origin masterremote add origin https://github.com/pandalearnstocode/pandalearnstocode.github.iio.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccommit -m "first commit"[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[master (root-commit) 0b27ea6] first commit
+ 82 files changed, 10998 insertions(+)
+ create mode 100644 404.html
+ create mode 100644 about/index.html
+ create mode 100644 categories/index.html
+ create mode 100644 categories/index.xml
+ create mode 100644 categories/r/index.html
+ create mode 100644 categories/r/index.xml
+ create mode 100644 categories/r/page/1/index.html
+ create mode 100644 googlea312a54ab7dd3d86.html
+ create mode 100644 images/avatar.jpg
+ create mode 100644 images/favicon-16x16.png
+ create mode 100644 images/favicon-32x32.png
+ create mode 100644 images/favicon.ico
+ create mode 100644 images/grey-prism.svg
+ create mode 100644 images/poster.jpg
+ create mode 100644 images/qrcode.jpg
+ create mode 100644 images/tile-image-windows.png
+ create mode 100644 images/touch-icon-android.png
+ create mode 100644 images/touch-icon-apple.png
+ create mode 100644 index.html
+ create mode 100644 index.xml
+ create mode 100644 links/index.html
+ create mode 100644 media/cover.jpg
+ create mode 100644 media/links/chekun.jpg
+ create mode 100644 media/links/kandisheng.jpg
+ create mode 100644 media/links/wangbo.jpg
+ create mode 100644 media/links/yuanxuxu.jpg
+ create mode 100644 media/posts/hugo-nuo-post-preview/01.jpg
+ create mode 100644 media/posts/hugo-nuo-post-preview/videojs.mp4
+ create mode 100644 media/posts/hugo-nuo-post-preview/videojs.ogv
+ create mode 100644 media/posts/hugo-nuo-post-preview/videojs.webm
+ create mode 100644 page/1/index.html
+ create mode 100644 post/2015-07-23-r-rmarkdown.Rmd
+ create mode 100644 post/2015-07-23-r-rmarkdown/index.html
+ create mode 100644 post/2015-07-23-r-rmarkdown_files/figure-html/pie-1.png
+ create mode 100644 post/creating-a-new-theme/index.html
+ create mode 100644 post/goisforlovers/index.html
+ create mode 100644 post/hugo-nuo-post-preview/index.html
+ create mode 100644 post/hugoisforlovers/index.html
+ create mode 100644 post/index.html
+ create mode 100644 post/index.xml
+ create mode 100644 post/migrate-from-jekyll/index.html
+ create mode 100644 post/page/1/index.html
+ create mode 100644 resume/index.html
+ create mode 100644 robots.txt
+ create mode 100644 scripts/index.min.js
+ create mode 100644 sitemap.xml
+ create mode 100644 styles/main.min.css
+ create mode 100644 tags/development/index.html
+ create mode 100644 tags/development/index.xml
+ create mode 100644 tags/development/page/1/index.html
+ create mode 100644 tags/go/index.html
+ create mode 100644 tags/go/index.xml
+ create mode 100644 tags/go/page/1/index.html
+ create mode 100644 tags/golang/index.html
+ create mode 100644 tags/golang/index.xml
+ create mode 100644 tags/golang/page/1/index.html
+ create mode 100644 tags/hugo/index.html
+ create mode 100644 tags/hugo/index.xml
+ create mode 100644 tags/hugo/page/1/index.html
+ create mode 100644 tags/index.html
+ create mode 100644 tags/index.xml
+ create mode 100644 tags/markdown/index.html
+ create mode 100644 tags/markdown/index.xml
+ create mode 100644 tags/markdown/page/1/index.html
+ create mode 100644 tags/plot/index.html
+ create mode 100644 tags/plot/index.xml
+ create mode 100644 tags/plot/page/1/index.html
+ create mode 100644 tags/r-markdown/index.html
+ create mode 100644 tags/r-markdown/index.xml
+ create mode 100644 tags/r-markdown/page/1/index.html
+ create mode 100644 tags/regression/index.html
+ create mode 100644 tags/regression/index.xml
+ create mode 100644 tags/regression/page/1/index.html
+ create mode 100644 tags/templates/index.html
+ create mode 100644 tags/templates/index.xml
+ create mode 100644 tags/templates/page/1/index.html
+ create mode 100644 tags/theme/index.html
+ create mode 100644 tags/theme/index.xml
+ create mode 100644 tags/theme/page/1/index.html
+ create mode 100644 tags/themes/index.html
+ create mode 100644 tags/themes/index.xml
+ create mode 100644 tags/themes/page/1/index.html
+]0;~/pandaleanstocode/publicAritras-MacBook-Pro:public aritrabiswas$ git commit -m "first commit"add . [K[2Pinitcd public/ls[Kgit push -u origin masterremote add origin https://github.com/pandalearnstocode/pandalearnstocode.github.iio.git
+]0;~/pandaleanstocode/publicAritras-MacBook-Pro:public aritrabiswas$ git remote add origin https://github.com/pandalearnstocode/pandalearnstocode.github.iio.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccommit -m "first commit"[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cadd . [K[2Pinitcd public/ls[Kgit push -u origin master
+Enumerating objects: 145, done.
+Counting objects:   0% (1/145)   Counting objects:   1% (2/145)   Counting objects:   2% (3/145)   Counting objects:   3% (5/145)   Counting objects:   4% (6/145)   Counting objects:   5% (8/145)   Counting objects:   6% (9/145)   Counting objects:   7% (11/145)   Counting objects:   8% (12/145)   Counting objects:   9% (14/145)   Counting objects:  10% (15/145)   Counting objects:  11% (16/145)   Counting objects:  12% (18/145)   Counting objects:  13% (19/145)   Counting objects:  14% (21/145)   Counting objects:  15% (22/145)   Counting objects:  16% (24/145)   Counting objects:  17% (25/145)   Counting objects:  18% (27/145)   Counting objects:  19% (28/145)   Counting objects:  20% (29/145)   Counting objects:  21% (31/145)   Counting objects:  22% (32/145)   Counting objects:  23% (34/145)   Counting objects:  24% (35/145)   Counting objects:  25% (37/145)   Counting objects:  26% (38/145)   Counting objects:  27% (40/145)   Counting objects:  28% (41/145)   Counting objects:  29% (43/145)   Counting objects:  30% (44/145)   Counting objects:  31% (45/145)   Counting objects:  32% (47/145)   Counting objects:  33% (48/145)   Counting objects:  34% (50/145)   Counting objects:  35% (51/145)   Counting objects:  36% (53/145)   Counting objects:  37% (54/145)   Counting objects:  38% (56/145)   Counting objects:  39% (57/145)   Counting objects:  40% (58/145)   Counting objects:  41% (60/145)   Counting objects:  42% (61/145)   Counting objects:  43% (63/145)   Counting objects:  44% (64/145)   Counting objects:  45% (66/145)   Counting objects:  46% (67/145)   Counting objects:  47% (69/145)   Counting objects:  48% (70/145)   Counting objects:  49% (72/145)   Counting objects:  50% (73/145)   Counting objects:  51% (74/145)   Counting objects:  52% (76/145)   Counting objects:  53% (77/145)   Counting objects:  54% (79/145)   Counting objects:  55% (80/145)   Counting objects:  56% (82/145)   Counting objects:  57% (83/145)   Counting objects:  58% (85/145)   Counting objects:  59% (86/145)   Counting objects:  60% (87/145)   Counting objects:  61% (89/145)   Counting objects:  62% (90/145)   Counting objects:  63% (92/145)   Counting objects:  64% (93/145)   Counting objects:  65% (95/145)   Counting objects:  66% (96/145)   Counting objects:  67% (98/145)   Counting objects:  68% (99/145)   Counting objects:  69% (101/145)   Counting objects:  70% (102/145)   Counting objects:  71% (103/145)   Counting objects:  72% (105/145)   Counting objects:  73% (106/145)   Counting objects:  74% (108/145)   Counting objects:  75% (109/145)   Counting objects:  76% (111/145)   Counting objects:  77% (112/145)   Counting objects:  78% (114/145)   Counting objects:  79% (115/145)   Counting objects:  80% (116/145)   Counting objects:  81% (118/145)   Counting objects:  82% (119/145)   Counting objects:  83% (121/145)   Counting objects:  84% (122/145)   Counting objects:  85% (124/145)   Counting objects:  86% (125/145)   Counting objects:  87% (127/145)   Counting objects:  88% (128/145)   Counting objects:  89% (130/145)   Counting objects:  90% (131/145)   Counting objects:  91% (132/145)   Counting objects:  92% (134/145)   Counting objects:  93% (135/145)   Counting objects:  94% (137/145)   Counting objects:  95% (138/145)   Counting objects:  96% (140/145)   Counting objects:  97% (141/145)   Counting objects:  98% (143/145)   Counting objects:  99% (144/145)   Counting objects: 100% (145/145)   Counting objects: 100% (145/145), done.
+Delta compression using up to 8 threads
+Compressing objects:   0% (1/102)   Compressing objects:   1% (2/102)   Compressing objects:   2% (3/102)   Compressing objects:   3% (4/102)   Compressing objects:   4% (5/102)   Compressing objects:   5% (6/102)   Compressing objects:   6% (7/102)   Compressing objects:   7% (8/102)   Compressing objects:   8% (9/102)   Compressing objects:   9% (10/102)   Compressing objects:  10% (11/102)   Compressing objects:  11% (12/102)   Compressing objects:  12% (13/102)   Compressing objects:  13% (14/102)   Compressing objects:  14% (15/102)   Compressing objects:  15% (16/102)   Compressing objects:  16% (17/102)   Compressing objects:  17% (18/102)   Compressing objects:  18% (19/102)   Compressing objects:  19% (20/102)   Compressing objects:  20% (21/102)   Compressing objects:  21% (22/102)   Compressing objects:  22% (23/102)   Compressing objects:  23% (24/102)   Compressing objects:  24% (25/102)   Compressing objects:  25% (26/102)   Compressing objects:  26% (27/102)   Compressing objects:  27% (28/102)   Compressing objects:  28% (29/102)   Compressing objects:  29% (30/102)   Compressing objects:  30% (31/102)   Compressing objects:  31% (32/102)   Compressing objects:  32% (33/102)   Compressing objects:  33% (34/102)   Compressing objects:  34% (35/102)   Compressing objects:  35% (36/102)   Compressing objects:  36% (37/102)   Compressing objects:  37% (38/102)   Compressing objects:  38% (39/102)   Compressing objects:  39% (40/102)   Compressing objects:  40% (41/102)   Compressing objects:  41% (42/102)   Compressing objects:  42% (43/102)   Compressing objects:  43% (44/102)   Compressing objects:  44% (45/102)   Compressing objects:  45% (46/102)   Compressing objects:  46% (47/102)   Compressing objects:  47% (48/102)   Compressing objects:  48% (49/102)   Compressing objects:  49% (50/102)   Compressing objects:  50% (51/102)   Compressing objects:  51% (53/102)   Compressing objects:  52% (54/102)   Compressing objects:  53% (55/102)   Compressing objects:  54% (56/102)   Compressing objects:  55% (57/102)   Compressing objects:  56% (58/102)   Compressing objects:  57% (59/102)   Compressing objects:  58% (60/102)   Compressing objects:  59% (61/102)   Compressing objects:  60% (62/102)   Compressing objects:  61% (63/102)   Compressing objects:  62% (64/102)   Compressing objects:  63% (65/102)   Compressing objects:  64% (66/102)   Compressing objects:  65% (67/102)   Compressing objects:  66% (68/102)   Compressing objects:  67% (69/102)   Compressing objects:  68% (70/102)   Compressing objects:  69% (71/102)   Compressing objects:  70% (72/102)   Compressing objects:  71% (73/102)   Compressing objects:  72% (74/102)   Compressing objects:  73% (75/102)   Compressing objects:  74% (76/102)   Compressing objects:  75% (77/102)   Compressing objects:  76% (78/102)   Compressing objects:  77% (79/102)   Compressing objects:  78% (80/102)   Compressing objects:  79% (81/102)   Compressing objects:  80% (82/102)   Compressing objects:  81% (83/102)   Compressing objects:  82% (84/102)   Compressing objects:  83% (85/102)   Compressing objects:  84% (86/102)   Compressing objects:  85% (87/102)   Compressing objects:  86% (88/102)   Compressing objects:  87% (89/102)   Compressing objects:  88% (90/102)   Compressing objects:  89% (91/102)   Compressing objects:  90% (92/102)   Compressing objects:  91% (93/102)   Compressing objects:  92% (94/102)   Compressing objects:  93% (95/102)   Compressing objects:  94% (96/102)   Compressing objects:  95% (97/102)   Compressing objects:  96% (98/102)   Compressing objects:  97% (99/102)   Compressing objects:  98% (100/102)   Compressing objects:  99% (101/102)   Compressing objects: 100% (102/102)   Compressing objects: 100% (102/102), done.
+Writing objects:   0% (1/145)   Writing objects:   1% (2/145)   Writing objects:   2% (4/145)   Writing objects:   3% (5/145)   Writing objects:   4% (6/145)   Writing objects:   7% (11/145)   Writing objects:   8% (13/145)   Writing objects:   9% (14/145)   Writing objects:  10% (15/145)   Writing objects:  12% (18/145)   Writing objects:  13% (19/145)   Writing objects:  15% (23/145)   Writing objects:  16% (24/145)   Writing objects:  17% (25/145)   Writing objects:  18% (27/145)   Writing objects:  19% (28/145)   Writing objects:  20% (29/145)   Writing objects:  21% (31/145)   Writing objects:  22% (32/145)   Writing objects:  23% (34/145)   Writing objects:  24% (35/145)   Writing objects:  25% (37/145)   Writing objects:  26% (38/145)   Writing objects:  27% (40/145)   Writing objects:  28% (41/145)   Writing objects:  29% (43/145)   Writing objects:  30% (44/145)   Writing objects:  31% (45/145)   Writing objects:  32% (47/145)   Writing objects:  33% (48/145)   Writing objects:  34% (50/145)   Writing objects:  35% (51/145)   Writing objects:  35% (51/145), 1.07 MiB | 646.00 KiB/s   Writing objects:  36% (53/145), 1.07 MiB | 646.00 KiB/s   Writing objects:  37% (54/145), 1.07 MiB | 646.00 KiB/s   Writing objects:  38% (56/145), 1.07 MiB | 646.00 KiB/s   Writing objects:  39% (57/145), 1.07 MiB | 646.00 KiB/s   Writing objects:  40% (58/145), 1.07 MiB | 646.00 KiB/s   Writing objects:  41% (60/145), 1.07 MiB | 646.00 KiB/s   Writing objects:  42% (61/145), 1.07 MiB | 646.00 KiB/s   Writing objects:  43% (63/145), 1.07 MiB | 646.00 KiB/s   Writing objects:  44% (64/145), 1.07 MiB | 646.00 KiB/s   Writing objects:  45% (66/145), 1.07 MiB | 646.00 KiB/s   Writing objects:  46% (67/145), 1.07 MiB | 646.00 KiB/s   Writing objects:  47% (69/145), 1.07 MiB | 646.00 KiB/s   Writing objects:  48% (70/145), 1.07 MiB | 646.00 KiB/s   Writing objects:  49% (72/145), 1.07 MiB | 646.00 KiB/s   Writing objects:  50% (73/145), 1.07 MiB | 646.00 KiB/s   Writing objects:  51% (74/145), 1.07 MiB | 646.00 KiB/s   Writing objects:  52% (76/145), 1.07 MiB | 646.00 KiB/s   Writing objects:  53% (77/145), 1.07 MiB | 646.00 KiB/s   Writing objects:  54% (79/145), 1.07 MiB | 646.00 KiB/s   Writing objects:  55% (80/145), 1.07 MiB | 646.00 KiB/s   Writing objects:  56% (82/145), 1.07 MiB | 646.00 KiB/s   Writing objects:  57% (83/145), 1.07 MiB | 646.00 KiB/s   Writing objects:  58% (85/145), 1.07 MiB | 646.00 KiB/s   Writing objects:  59% (86/145), 1.07 MiB | 646.00 KiB/s   Writing objects:  60% (87/145), 1.07 MiB | 646.00 KiB/s   Writing objects:  61% (89/145), 1.07 MiB | 646.00 KiB/s   Writing objects:  62% (90/145), 1.07 MiB | 646.00 KiB/s   Writing objects:  63% (92/145), 1.07 MiB | 646.00 KiB/s   Writing objects:  64% (93/145), 1.07 MiB | 646.00 KiB/s   Writing objects:  65% (95/145), 1.07 MiB | 646.00 KiB/s   Writing objects:  66% (96/145), 1.07 MiB | 646.00 KiB/s   Writing objects:  67% (98/145), 1.07 MiB | 646.00 KiB/s   Writing objects:  68% (99/145), 1.07 MiB | 646.00 KiB/s   Writing objects:  69% (101/145), 1.07 MiB | 646.00 KiB/s   Writing objects:  70% (102/145), 1.07 MiB | 646.00 KiB/s   Writing objects:  71% (103/145), 1.07 MiB | 646.00 KiB/s   Writing objects:  72% (105/145), 1.07 MiB | 646.00 KiB/s   Writing objects:  73% (106/145), 1.07 MiB | 646.00 KiB/s   Writing objects:  74% (108/145), 1.07 MiB | 646.00 KiB/s   Writing objects:  75% (109/145), 1.07 MiB | 646.00 KiB/s   Writing objects:  76% (111/145), 1.07 MiB | 646.00 KiB/s   Writing objects:  77% (113/145), 1.07 MiB | 646.00 KiB/s   Writing objects:  78% (114/145), 1.07 MiB | 646.00 KiB/s   Writing objects:  79% (115/145), 1.07 MiB | 646.00 KiB/s   Writing objects:  80% (116/145), 1.07 MiB | 646.00 KiB/s   Writing objects:  81% (118/145), 1.07 MiB | 646.00 KiB/s   Writing objects:  82% (119/145), 1.07 MiB | 646.00 KiB/s   Writing objects:  83% (121/145), 1.07 MiB | 646.00 KiB/s   Writing objects:  84% (122/145), 1.07 MiB | 646.00 KiB/s   Writing objects:  85% (124/145), 1.07 MiB | 646.00 KiB/s   Writing objects:  86% (125/145), 1.07 MiB | 646.00 KiB/s   Writing objects:  87% (127/145), 1.07 MiB | 646.00 KiB/s   Writing objects:  88% (128/145), 1.07 MiB | 646.00 KiB/s   Writing objects:  89% (130/145), 1.07 MiB | 646.00 KiB/s   Writing objects:  90% (131/145), 1.07 MiB | 646.00 KiB/s   Writing objects:  91% (132/145), 1.07 MiB | 646.00 KiB/s   Writing objects:  92% (134/145), 1.07 MiB | 646.00 KiB/s   Writing objects:  93% (135/145), 1.07 MiB | 646.00 KiB/s   Writing objects:  94% (137/145), 1.07 MiB | 646.00 KiB/s   Writing objects:  95% (138/145), 1.07 MiB | 646.00 KiB/s   Writing objects:  96% (140/145), 1.07 MiB | 646.00 KiB/s   Writing objects:  97% (141/145), 1.07 MiB | 646.00 KiB/s   Writing objects:  98% (143/145), 1.07 MiB | 646.00 KiB/s   Writing objects:  99% (144/145), 1.07 MiB | 646.00 KiB/s   Writing objects: 100% (145/145), 1.07 MiB | 646.00 KiB/s   Writing objects: 100% (145/145), 1.21 MiB | 679.00 KiB/s, done.
+Total 145 (delta 47), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/47)   [Kremote: Resolving deltas:  19% (9/47)   [Kremote: Resolving deltas:  53% (25/47)   [Kremote: Resolving deltas:  57% (27/47)   [Kremote: Resolving deltas:  85% (40/47)   [Kremote: Resolving deltas:  93% (44/47)   [Kremote: Resolving deltas: 100% (47/47)   [Kremote: Resolving deltas: 100% (47/47), done.[K
+To https://github.com/pandalearnstocode/pandalearnstocode.github.io.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+]0;~/pandaleanstocode/publicAritras-MacBook-Pro:public aritrabiswas$ cd ..
+]0;~/pandaleanstocodeAritras-MacBook-Pro:pandaleanstocode aritrabiswas$ ls
+archetypes			googlea312a54ab7dd3d86.html	public
+config.toml			index.Rmd			resources
+content				layouts				static
+data				pandaleanstocode.Rproj		themes
+]0;~/pandaleanstocodeAritras-MacBook-Pro:pandaleanstocode aritrabiswas$ git add , 
+fatal: pathspec ',' did not match any files
+]0;~/pandaleanstocodeAritras-MacBook-Pro:pandaleanstocode aritrabiswas$ git commit -am "adding article MMM 101"
