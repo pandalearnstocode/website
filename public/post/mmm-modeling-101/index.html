@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8" />
+
+  
+  <title>MMM Modeling 101</title>
+
+  
+  
+  <link href="//cdn.jsdelivr.net" rel="dns-prefetch">
+  <link href="//cdnjs.cloudflare.com" rel="dns-prefetch">
+  <link href="//at.alicdn.com" rel="dns-prefetch">
+  <link href="//fonts.googleapis.com" rel="dns-prefetch">
+  <link href="//fonts.gstatic.com" rel="dns-prefetch">
+  
+  
+  
+  <link href="//www.google-analytics.com" rel="dns-prefetch">
+  
+
+  
+
+  
+  <meta name="author" content="Aritra Biswas">
+  <meta name="description" content="The marketing mix is not a very new discipline. In this article, I will try to sum-up my experience of in working in this field for the past few years. One caveat will be I am not very much in agreement with all the practices in the vertical. So, I will try to be objective as much as possible and will add my thoughts about my disagreement. Modeling part of the marketing mix is nothing but a regression problem.">
+
+  
+  
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@pdlearnstocode">
+    <meta name="twitter:title" content="MMM Modeling 101">
+    <meta name="twitter:description" content="The marketing mix is not a very new discipline. In this article, I will try to sum-up my experience of in working in this field for the past few years. One caveat will be I am not very much in agreement with all the practices in the vertical. So, I will try to be objective as much as possible and will add my thoughts about my disagreement. Modeling part of the marketing mix is nothing but a regression problem.">
+    <meta name="twitter:image" content="/images/avatar.jpg">
+  
+
+  
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="MMM Modeling 101">
+  <meta property="og:description" content="The marketing mix is not a very new discipline. In this article, I will try to sum-up my experience of in working in this field for the past few years. One caveat will be I am not very much in agreement with all the practices in the vertical. So, I will try to be objective as much as possible and will add my thoughts about my disagreement. Modeling part of the marketing mix is nothing but a regression problem.">
+  <meta property="og:url" content="/post/mmm-modeling-101/">
+  <meta property="og:image" content="/images/avatar.jpg">
+
+
+
+
+<meta name="generator" content="Hugo 0.53">
+
+
+<link rel="canonical" href="/post/mmm-modeling-101/">
+
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="format-detection" content="telephone=no,email=no,adress=no">
+<meta http-equiv="Cache-Control" content="no-transform">
+
+
+<meta name="robots" content="index,follow">
+<meta name="referrer" content="origin-when-cross-origin">
+<meta name="google-site-verification" content="_moDmnnBNVLBN1rzNxyGUGdPHE20YgbmrtzLIbxaWFc">
+
+
+
+
+
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Aritra Biswas">
+<meta name="msapplication-tooltip" content="Aritra Biswas">
+<meta name='msapplication-navbutton-color' content="#5fbf5e">
+<meta name="msapplication-TileColor" content="#5fbf5e">
+<meta name="msapplication-TileImage" content="/images/tile-image-windows.png">
+<link rel="icon" href="/images/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+<link rel="icon" sizes="192x192" href="/images/touch-icon-android.png">
+<link rel="apple-touch-icon" href="/images/touch-icon-apple.png">
+
+
+<link rel="preload" href="/styles/main.min.css" as="style">
+<link rel="preload" href="https://fonts.googleapis.com/css?family=Lobster" as="style">
+<link rel="preload" href="/images/avatar.jpg" as="image">
+<link rel="preload" href="/images/grey-prism.svg" as="image">
+
+
+<style>
+  body {
+    background: rgb(244, 243, 241) url('/images/grey-prism.svg') repeat fixed;
+  }
+</style>
+<link rel="stylesheet" href="/styles/main.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.2/dist/medium-zoom.min.js"></script>
+
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/video.js@7.3.0/dist/video-js.min.css">
+
+
+
+  
+  
+<!--[if lte IE 8]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/videojs-ie8@1.1.2/dist/videojs-ie8.min.js"></script>
+<![endif]-->
+
+<!--[if lte IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/eligrey-classlist-js-polyfill@1.2.20180112/classList.min.js"></script>
+<![endif]-->
+
+
+</head>
+  <body>
+    
+    <div class="suspension">
+      <a role="button" aria-label="Go to top" title="Go to top" class="to-top is-hide"><span class="icon icon-up" aria-hidden="true"></span></a>
+      
+        
+      
+    </div>
+    
+    
+  <header class="site-header">
+  <img class="avatar" src="/images/avatar.jpg" alt="Avatar">
+  
+  <h2 class="title">Aritra Biswas</h2>
+  
+  <p class="subtitle">~ Stay Hungry Stay Foolish ~</p>
+  <button class="menu-toggle" type="button" aria-label="Main Menu" aria-expanded="false" tab-index="0">
+    <span class="icon icon-menu" aria-hidden="true"></span>
+  </button>
+
+  <nav class="site-menu collapsed">
+    <h2 class="offscreen">Main Menu</h2>
+    <ul class="menu-list">
+      
+      
+      
+      
+        <li class="menu-item
+          
+          
+           is-active">
+          <a href="/">Home</a>
+        </li>
+      
+        <li class="menu-item
+          
+          
+          ">
+          <a href="https://github.com/laozhu">Works</a>
+        </li>
+      
+        <li class="menu-item
+          
+          
+          ">
+          <a href="/tags/">Tags</a>
+        </li>
+      
+        <li class="menu-item
+          
+          
+          ">
+          <a href="/links/">Links</a>
+        </li>
+      
+        <li class="menu-item
+          
+          
+          ">
+          <a href="/about/">About</a>
+        </li>
+      
+    </ul>
+  </nav>
+  <nav class="social-menu collapsed">
+    <h2 class="offscreen">Social Networks</h2>
+    <ul class="social-list"><li class="social-item">
+          <a href="mailto:pandalearnstocode@gmail.com" title="Email" aria-label="Email">
+            <span class="icon icon-email" aria-hidden="true"></span>
+          </a>
+        </li><li class="social-item">
+          <a href="//github.com/pandalearnstocode" title="GitHub" aria-label="GitHub">
+            <span class="icon icon-github" aria-hidden="true"></span>
+          </a>
+        </li><li class="social-item">
+          <a href="//twitter.com/pdlearnstocode" title="Twitter" aria-label="Twitter">
+            <span class="icon icon-twitter" aria-hidden="true"></span>
+          </a>
+        </li><li class="social-item">
+          <a href="//www.facebook.com/pandalearnstocode" title="Facebook" aria-label="Facebook">
+            <span class="icon icon-facebook" aria-hidden="true"></span>
+          </a>
+        </li><li class="social-item">
+          <a href="//plus.google.com/110877255891631975552" title="Google+" aria-label="Google+">
+            <span class="icon icon-google" aria-hidden="true"></span>
+          </a>
+        </li><li class="social-item">
+          <a href="//www.instagram.com/pandalearnstocode" title="Instagram" aria-label="Instagram">
+            <span class="icon icon-instagram" aria-hidden="true"></span>
+          </a>
+        </li><li class="social-item">
+          <a href="//stackoverflow.com/users/9984132/pandalearnstocode" title="stackOverflow"  aria-label="stackOverflow">
+            <span class="icon icon-stackoverflow" aria-hidden="true"></span>
+          </a>
+        </li><li class="social-item">
+          <a href="//www.linkedin.com/in/pandalearnstocode" title="Linkedin" aria-label="Linkedin">
+            <span class="icon icon-linkedin" aria-hidden="true"></span>
+          </a>
+        </li></ul>
+  </nav>
+</header>
+
+  <section class="main post-detail">
+    <header class="post-header">
+      <h1 class="post-title">MMM Modeling 101</h1>
+      <p class="post-meta">@Aritra Biswas · Dec 29, 2018 · 3 min read</p>
+    </header>
+    <article class="post-content"><p>The marketing mix is not a very new discipline. In this article, I will try to sum-up my experience of in working in this field for the past few years. One caveat will be I am not very much in agreement with all the practices in the vertical. So, I will try to be objective as much as possible and will add my thoughts about my disagreement. Modeling part of the marketing mix is nothing but a regression problem. The objective of the Regression is not to exactly predict the outcome in the upcoming days but the objective more inclined towards understand the effectiveness of the various media and promotional strategies.</p>
+
+<p>Now, which type of regression has to be applied is quite subjective and depends upon the type of data but broadly there is two type regression methods widely used on basis of richness of the available data and they are as follows:</p>
+
+<ul>
+<li>Additive Model</li>
+<li>Multiplicative Model</li>
+</ul>
+
+<p>The above-mentioned classification is on the basis of granularity of the data. On the basis of geographical complexity, the classification will be,</p>
+
+<ul>
+<li>Multiple Linear Regression</li>
+<li>Hierarchical Linear Modeling</li>
+</ul>
+
+<p>After modeling is done standard practise is simulation or the planning part of the MROI studies or MMM. Now the question is quite obvious to arise that why one does not use the prediction of the regression itself? We will come to this in the Simulation or Market Planner 101.</p>
+
+<p>The objective of the MMM modeling is to understand the effectiveness and contribution in the total sales due to three major factors:</p>
+
+<ul>
+<li>Base</li>
+<li>Media</li>
+<li>Promotion</li>
+</ul>
+
+<p>Other than these factor in different non-conventional vertical there are several macroeconomic factors other things comes into play such as,</p>
+
+<ul>
+<li>Total industry volume change (% TIV change).</li>
+<li>Decline due to the existence of a product in the market for some amount of time (% Sales Adjusted Index).</li>
+<li>Time difference between modeling and planning period (Latest quarter sales and OaO).</li>
+<li>Presence of an event during the simulation period (Event Lift, Event Month and Event Present).</li>
+<li>Holidays and other things (Dummy Variable).</li>
+<li>Copy score (Effective Index)</li>
+</ul>
+
+<p>One major thing most of the people mistake regarding MMM that it is not a time series regression. Time plays a factor in the regression but here the objective is not to study the effect of time on the dependent variable but to understand how different drivers drive the dependent variable.</p>
+
+<p>Here are some of the other important factors associated with the MMM Modeling:</p>
+
+<ul>
+<li>Ad stocking</li>
+<li>Causal</li>
+<li>Response curve</li>
+<li>Saturation of a marketing tactic</li>
+<li>Flighting pattern</li>
+<li>Seasonality</li>
+<li>Dummy variables</li>
+<li>Halo effect</li>
+<li>ROI</li>
+<li>ST ROI</li>
+<li>LT ROI</li>
+<li>Take Rate Elasticity</li>
+</ul>
+
+<p>Here are some of the things which can be the dependent variable in a marketing mix study:</p>
+
+<ul>
+<li>Sales</li>
+<li>OaO (Overall brand opinion or Brand Equity)</li>
+<li>Revenue</li>
+<li>Profit</li>
+</ul>
+
+<p>There can be a context where someone is interested to understand the effectiveness of all the existing products under their brand. To understand the effectiveness of each product, every tactic for each product and also the effectiveness of brand-level execution and their impact of individual product we build a portfolio model. Here are some important concepts associated with the portfolio modeling:</p>
+
+<ul>
+<li>Multi-product Portfolio Model.</li>
+<li>Multi-product Multi-geography Portfolio Model.</li>
+<li>Corporate activity or Brand Level activity.</li>
+</ul>
+
+<p>We will cover the above-mentioned things with details in the upcoming articles.</p>
+</article>
+    <footer class="post-footer">
+      
+      <ul class="post-tags">
+        
+      </ul>
+      
+      <p class="post-copyright">
+        © This post is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License，please give source if you wish to quote or reproduce.
+      </p>
+    </footer>
+    
+      
+    
+  </section>
+  
+
+
+<footer class="site-footer">
+  <p>© 2017-2018 Aritra Biswas</p>
+  <p>Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> with theme <a href="https://github.com/laozhu/hugo-nuo" target="_blank" rel="noopener">Nuo</a>.</p>
+  
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/smooth-scroll@15.0.0/dist/smooth-scroll.min.js"></script>
+
+
+
+<script async src="https://cdn.jsdelivr.net/npm/video.js@7.3.0/dist/video.min.js"></script>
+
+
+
+
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [['$','$'], ['\\(','\\)']],
+      displayMath: [['$$','$$'], ['\\[','\\]']],
+      processEscapes: true,
+      processEnvironments: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+      TeX: { equationNumbers: { autoNumber: "AMS" },
+      extensions: ["AMSmath.js", "AMSsymbols.js"] }
+    },
+  });
+</script>
+<script type="text/x-mathjax-config">
+  // Fix <code> tags after MathJax finishes running. This is a
+  // hack to overcome a shortcoming of Markdown. Discussion at
+  // https://github.com/mojombo/jekyll/issues/199
+  MathJax.Hub.Queue(() => {
+    MathJax.Hub.getAllJax().map(v => v.SourceElement().parentNode.className += ' has-jax');
+  });
+</script>
+
+
+
+<script src="/scripts/index.min.js"></script>
+
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-131453565-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+
+
+
+
+  </body>
+</html>
