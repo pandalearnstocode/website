@@ -728,3 +728,45 @@ To https://github.com/pandalearnstocode/pandalearnstocode.github.io.git
    490fe79..3c8de31  master -> master
 ]0;~/pandaleanstocode/publicAritras-MacBook-Pro:public aritrabiswas$ cd ..
 ]0;~/pandaleanstocodeAritras-MacBook-Pro:pandaleanstocode aritrabiswas$ cd ..git push origin mastercommit -m "correcting typo of  article MMM 101"add .[K
+]0;~/pandaleanstocodeAritras-MacBook-Pro:pandaleanstocode aritrabiswas$ git add .[4Pcd ..git push origin mastercommit -m "correcting typo of  article MMM 101"
+[master 045d6b2] correcting typo of  article MMM 101
+ 11 files changed, 602 insertions(+), 7 deletions(-)
+ create mode 100644 .Rproj.user/2D1ED2C6/sources/prop/53D8A261
+ create mode 100644 .Rproj.user/2D1ED2C6/sources/s-DE7DF8BA/4C5E78C4
+ create mode 100644 .Rproj.user/2D1ED2C6/sources/s-DE7DF8BA/4C5E78C4-contents
+ create mode 100644 content/post/2018-12-29-mmm-modeling-101.md
+ create mode 100644 public/post/mmm-modeling-101/index.html
+]0;~/pandaleanstocodeAritras-MacBook-Pro:pandaleanstocode aritrabiswas$ git commit -m "correcting typo of  article MMM 101"add .[K[4Pcd ..git push origin master
+Enumerating objects: 40, done.
+Counting objects:   2% (1/40)   Counting objects:   5% (2/40)   Counting objects:   7% (3/40)   Counting objects:  10% (4/40)   Counting objects:  12% (5/40)   Counting objects:  15% (6/40)   Counting objects:  17% (7/40)   Counting objects:  20% (8/40)   Counting objects:  22% (9/40)   Counting objects:  25% (10/40)   Counting objects:  27% (11/40)   Counting objects:  30% (12/40)   Counting objects:  32% (13/40)   Counting objects:  35% (14/40)   Counting objects:  37% (15/40)   Counting objects:  40% (16/40)   Counting objects:  42% (17/40)   Counting objects:  45% (18/40)   Counting objects:  47% (19/40)   Counting objects:  50% (20/40)   Counting objects:  52% (21/40)   Counting objects:  55% (22/40)   Counting objects:  57% (23/40)   Counting objects:  60% (24/40)   Counting objects:  62% (25/40)   Counting objects:  65% (26/40)   Counting objects:  67% (27/40)   Counting objects:  70% (28/40)   Counting objects:  72% (29/40)   Counting objects:  75% (30/40)   Counting objects:  77% (31/40)   Counting objects:  80% (32/40)   Counting objects:  82% (33/40)   Counting objects:  85% (34/40)   Counting objects:  87% (35/40)   Counting objects:  90% (36/40)   Counting objects:  92% (37/40)   Counting objects:  95% (38/40)   Counting objects:  97% (39/40)   Counting objects: 100% (40/40)   Counting objects: 100% (40/40), done.
+Delta compression using up to 8 threads
+Compressing objects:   4% (1/22)   Compressing objects:   9% (2/22)   Compressing objects:  13% (3/22)   Compressing objects:  18% (4/22)   Compressing objects:  22% (5/22)   Compressing objects:  27% (6/22)   Compressing objects:  31% (7/22)   Compressing objects:  36% (8/22)   Compressing objects:  40% (9/22)   Compressing objects:  45% (10/22)   Compressing objects:  50% (11/22)   Compressing objects:  54% (12/22)   Compressing objects:  59% (13/22)   Compressing objects:  63% (14/22)   Compressing objects:  68% (15/22)   Compressing objects:  72% (16/22)   Compressing objects:  77% (17/22)   Compressing objects:  81% (18/22)   Compressing objects:  86% (19/22)   Compressing objects:  90% (20/22)   Compressing objects:  95% (21/22)   Compressing objects: 100% (22/22)   Compressing objects: 100% (22/22), done.
+Writing objects:   4% (1/23)   Writing objects:   8% (2/23)   Writing objects:  13% (3/23)   Writing objects:  17% (4/23)   Writing objects:  21% (5/23)   Writing objects:  26% (6/23)   Writing objects:  30% (7/23)   Writing objects:  34% (8/23)   Writing objects:  39% (9/23)   Writing objects:  43% (10/23)   Writing objects:  47% (11/23)   Writing objects:  52% (12/23)   Writing objects:  56% (13/23)   Writing objects:  60% (14/23)   Writing objects:  65% (15/23)   Writing objects:  69% (16/23)   Writing objects:  73% (17/23)   Writing objects:  78% (18/23)   Writing objects:  82% (19/23)   Writing objects:  86% (20/23)   Writing objects:  91% (21/23)   Writing objects:  95% (22/23)   Writing objects: 100% (23/23)   Writing objects: 100% (23/23), 10.03 KiB | 1.67 MiB/s, done.
+Total 23 (delta 14), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/14)   [Kremote: Resolving deltas:   7% (1/14)   [Kremote: Resolving deltas:  14% (2/14)   [Kremote: Resolving deltas:  21% (3/14)   [Kremote: Resolving deltas:  28% (4/14)   [Kremote: Resolving deltas:  35% (5/14)   [Kremote: Resolving deltas:  42% (6/14)   [Kremote: Resolving deltas:  50% (7/14)   [Kremote: Resolving deltas:  57% (8/14)   [Kremote: Resolving deltas:  64% (9/14)   [Kremote: Resolving deltas:  71% (10/14)   [Kremote: Resolving deltas:  78% (11/14)   [Kremote: Resolving deltas:  92% (13/14)   [Kremote: Resolving deltas: 100% (14/14)   [Kremote: Resolving deltas: 100% (14/14), completed with 13 local objects.[K
+To https://github.com/pandalearnstocode/website.git
+   32fd130..045d6b2  master -> master
+]0;~/pandaleanstocodeAritras-MacBook-Pro:pandaleanstocode aritrabiswas$ ls
+archetypes			googlea312a54ab7dd3d86.html	public
+config.toml			index.Rmd			resources
+content				layouts				static
+data				pandaleanstocode.Rproj		themes
+]0;~/pandaleanstocodeAritras-MacBook-Pro:pandaleanstocode aritrabiswas$ cd public/
+]0;~/pandaleanstocode/publicAritras-MacBook-Pro:public aritrabiswas$ git add ,[K.
+]0;~/pandaleanstocode/publicAritras-MacBook-Pro:public aritrabiswas$ git commit -m "adding additive and multiplicative model article"
+[master d850921] adding additive and multiplicative model article
+ 7 files changed, 674 insertions(+)
+ create mode 100644 post/additive-models-multiplicative-models-marketing-mix/index.html
+ create mode 100644 post/additive-models/index.html
+]0;~/pandaleanstocode/publicAritras-MacBook-Pro:public aritrabiswas$ git push origin master
+Enumerating objects: 19, done.
+Counting objects:   5% (1/19)   Counting objects:  10% (2/19)   Counting objects:  15% (3/19)   Counting objects:  21% (4/19)   Counting objects:  26% (5/19)   Counting objects:  31% (6/19)   Counting objects:  36% (7/19)   Counting objects:  42% (8/19)   Counting objects:  47% (9/19)   Counting objects:  52% (10/19)   Counting objects:  57% (11/19)   Counting objects:  63% (12/19)   Counting objects:  68% (13/19)   Counting objects:  73% (14/19)   Counting objects:  78% (15/19)   Counting objects:  84% (16/19)   Counting objects:  89% (17/19)   Counting objects:  94% (18/19)   Counting objects: 100% (19/19)   Counting objects: 100% (19/19), done.
+Delta compression using up to 8 threads
+Compressing objects:  10% (1/10)   Compressing objects:  20% (2/10)   Compressing objects:  30% (3/10)   Compressing objects:  40% (4/10)   Compressing objects:  50% (5/10)   Compressing objects:  60% (6/10)   Compressing objects:  70% (7/10)   Compressing objects:  80% (8/10)   Compressing objects:  90% (9/10)   Compressing objects: 100% (10/10)   Compressing objects: 100% (10/10), done.
+Writing objects:   8% (1/12)   Writing objects:  16% (2/12)   Writing objects:  33% (4/12)   Writing objects:  41% (5/12)   Writing objects:  50% (6/12)   Writing objects:  58% (7/12)   Writing objects:  66% (8/12)   Writing objects:  75% (9/12)   Writing objects:  83% (10/12)   Writing objects:  91% (11/12)   Writing objects: 100% (12/12)   Writing objects: 100% (12/12), 7.15 KiB | 2.38 MiB/s, done.
+Total 12 (delta 8), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/8)   [Kremote: Resolving deltas:  12% (1/8)   [Kremote: Resolving deltas:  25% (2/8)   [Kremote: Resolving deltas:  50% (4/8)   [Kremote: Resolving deltas:  62% (5/8)   [Kremote: Resolving deltas:  75% (6/8)   [Kremote: Resolving deltas:  87% (7/8)   [Kremote: Resolving deltas: 100% (8/8)   [Kremote: Resolving deltas: 100% (8/8), completed with 6 local objects.[K
+To https://github.com/pandalearnstocode/pandalearnstocode.github.io.git
+   3c8de31..d850921  master -> master
+]0;~/pandaleanstocode/publicAritras-MacBook-Pro:public aritrabiswas$ cd ..
+]0;~/pandaleanstocodeAritras-MacBook-Pro:pandaleanstocode aritrabiswas$ cd ..git push origin mastercommit -m "adding additive and multiplicative model article"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cadd .[K
