@@ -847,4 +847,10 @@ To https://github.com/pandalearnstocode/pandalearnstocode.github.io.git
    47903ba..a46a2f9  master -> master
 ]0;~/pandaleanstocode/publicAritras-MacBook-Pro:public aritrabiswas$ cd ..
 ]0;~/pandaleanstocodeAritras-MacBook-Pro:pandaleanstocode aritrabiswas$ cd ..git push origin mastercommit -m "adding rr,hl and adstocking. Need to correct type, Latex andd include code"[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cadd .[K
-[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CSaved working directory and index state WIP on master: b32a11d adding rr,hl and adstocking. Need to correct type, Latex and include code
+]0;~/pandaleanstocodeAritras-MacBook-Pro:pandaleanstocode aritrabiswas$ ls
+archetypes			googlea312a54ab7dd3d86.html	public
+config.toml			index.Rmd			resources
+content				layouts				static
+data				pandaleanstocode.Rproj		themes
+]0;~/pandaleanstocodeAritras-MacBook-Pro:pandaleanstocode aritrabiswas$ git add . [K

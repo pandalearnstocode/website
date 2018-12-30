@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
 
   
-  <title>Adstocking, Retention rate and Half Life</title>
+  <title>Adstocking, Retention Rate and Half Life</title>
 
   
   
@@ -31,7 +31,7 @@
   
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@pdlearnstocode">
-    <meta name="twitter:title" content="Adstocking, Retention rate and Half Life">
+    <meta name="twitter:title" content="Adstocking, Retention Rate and Half Life">
     <meta name="twitter:description" content="In a marketing mix study one of the major hypothesis is that a marketing tactic specially media does not impact immidiatly. There are several factors other than the execusion which impact sales caused by a marketing tactic. Here are some of the important facts associated with media tactics,
  Suppose one tactic has been executated at a point of time. Then amount of time it is remembered to an individual exposed with the advertisement is known as half life.">
     <meta name="twitter:image" content="/images/avatar.jpg">
@@ -39,7 +39,7 @@
 
   
   <meta property="og:type" content="article">
-  <meta property="og:title" content="Adstocking, Retention rate and Half Life">
+  <meta property="og:title" content="Adstocking, Retention Rate and Half Life">
   <meta property="og:description" content="In a marketing mix study one of the major hypothesis is that a marketing tactic specially media does not impact immidiatly. There are several factors other than the execusion which impact sales caused by a marketing tactic. Here are some of the important facts associated with media tactics,
  Suppose one tactic has been executated at a point of time. Then amount of time it is remembered to an individual exposed with the advertisement is known as half life.">
   <meta property="og:url" content="/post/adstocking-retention-rate-and-half-life/">
@@ -225,7 +225,7 @@
 
   <section class="main post-detail">
     <header class="post-header">
-      <h1 class="post-title">Adstocking, Retention rate and Half Life</h1>
+      <h1 class="post-title">Adstocking, Retention Rate and Half Life</h1>
       <p class="post-meta">@Aritra Biswas · Dec 29, 2018 · 4 min read</p>
     </header>
     <article class="post-content"><p>In a marketing mix study one of the major hypothesis is that a marketing tactic specially media does not impact immidiatly. There are several factors other than the execusion which impact sales caused by a marketing tactic. Here are some of the important facts associated with media tactics,</p>
@@ -256,27 +256,24 @@
 
 <p>This is the most popular for of the adstocking in current practise for addtive models. Using recurssion one can easliy derive the following result:</p>
 
-<p>$$ac<em>{it} \; = c</em>{it} + ac_{i(t-1)} \times  rr_i$$</p>
-
-<p>$$ac<em>{it} \; = c</em>{it} + (c<em>{i(t-1)} + ac</em>{i(t-2)} \times  rr_i) \times  rr_i$$</p>
-
-<p>$$\dots$$</p>
-
-<p>$$ac<em>{it} \; = \sum</em>{T=0}^{t} rr<em>i^{T-i} \times ac</em>{i(t-T)}$$</p>
+<p><code>$$ac_{it} \; = c_{it} + ac_{i(t-1)} \times  rr_i$$</code>
+<code>$$ac_{it} \; = c_{it} + (c_{i(t-1)} + ac_{i(t-2)} \times  rr_i) \times  rr_i$$</code>
+<code>$$\dots$$</code>
+<code>$$ac_{it} \; = \sum_{T=0}^{t} rr_i^{T-i} \times ac_{i(t-T)}$$</code></p>
 
 <p>In case of a logaritmmic model here is the following transformation which has is used:</p>
 
 <p><strong>Logarithmic adstocking:</strong></p>
 
-<p>$$ac<em>{it} \; = log(c</em>{it}) + ac_{i(t-1)} \times  rr_i$$</p>
+<p><code>$$ac_{it} \; = log(c_{it}) + ac_{i(t-1)} \times  rr_i$$</code></p>
 
 <p><strong>Negative exponential adstocking:</strong></p>
 
-<p>$$ac<em>{it} \; = (1 - \exp(- shape \times c</em>{it})) + ac_{i(t-1)} \times  rr_i$$</p>
+<p><code>$$ac_{it} \; = (1 - \exp(- shape \times c_{it})) + ac_{i(t-1)} \times  rr_i$$</code></p>
 
 <p><strong>S-curve adstocking:</strong></p>
 
-<p>$$ac<em>{it} \; = \frac{1}{(1 + \exp(- shape \times c</em>{it}))} + ac_{i(t-1)} \times  rr_i$$</p>
+<p><code>$$ac_{it} \; = \frac{1}{(1 + \exp(- shape \times c_{it}))} + ac_{i(t-1)} \times  rr_i$$</code></p>
 
 <p>Here in this following section we will code this formula in R and Python in order get out hands dirty. We will try to understand the nature of these adstocking by visualization and looking at their symmary statistics and try to infer that how does that impact out analysis further in the modeling and planning stage.</p>
 </article>

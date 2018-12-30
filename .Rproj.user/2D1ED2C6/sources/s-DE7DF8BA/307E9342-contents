@@ -1,0 +1,28 @@
+# set.seed(123)
+# x <- rnorm(52, 300, 100)
+# x[sample(1:52,10)] <- 1
+# y <- c()
+# a <- c()
+# b <- c()
+# y[1] <- x[1]
+# a[1] <- x[1]
+# b[1] <- x[1]
+# 
+# for(i in seq_along(seq(2,52))){
+#   y[i+1] <- log(x[i+1]) + (y[i] * .95)
+#   if(y[i+1] == -Inf){
+#     y[i+1] <- 0
+#   }
+#   a[i+1] <- (1 - exp(-2*x[i+1])) +  (a[i] * .98)
+#   b[i+1] <- (1/(1 + exp(-2*x[i+1]))) +  (b[i] * .97)
+# }
+# z <- as.numeric(filter(x = x, filter = .2, method = "recursive"))
+# 
+# plot(z,type = "l",col = "red")
+# lines(y)
+# lines(x, col = 'green')
+# lines(a, col = 'blue')
+# lines(b, col = 'pink')
+# 
+# df <- data.frame(cbind(x,y,z,a,b))
+# head(df)
