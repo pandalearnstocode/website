@@ -6,3 +6,86 @@ slug: reliability-theory-101
 categories: []
 tags: []
 ---
+
+One of the most important aspect of the marketing mix modeling is response curve or response surface. In this curve we plot weekly level of execusion on the x-axis and sales,OaO, revenue or profit in the Y-axis. The curve looks like Linear, C-shaped or S-shaped. This is known as saturation curve aswell. This curve is base on the statistical theory called reliablity and survival analysis. Here in this article we will try to explore some of the theoritical pre-requsit in order to understand response curve better. Before that here is some key points related to response curve:
+
+* In X axis there will be weekly causal or weekly spend. 
+* In Y axis there can be serveral things such as Sales, OaO, Revenue or Profit. 
+* This curve is because on probability modeling where the under lying probability distribution is Weibull (Normal, exponential and log-normal is a special case of Weibull Distributin.)
+* To model response curve we will use 2-parameter weibull distribution with parameters $\alpha$ and $\beta$. This is a special case of the three parameter weibull disttibution where the location parameter or $\gamma$ is zero. $\alpha$ in this distribution is known as the scale parameter and $\beta$ is known as the shape parameter or charesteristic life. 
+
+Here is an example of the response curve of a marketing tactic:
+
+```{r,echo=FALSE,warning=FALSE,message=FALSE}
+library(htmltools)
+library(htmlwidgets)
+library(metricsgraphics)
+library(dplyr)
+
+
+# http://rstudio-pubs-static.s3.amazonaws.com/5771_daae01bb8852442eaad7d91e424e4581.html
+N=2000
+scale=1
+shape=1.5
+x = sort(rweibull(N, shape=shape, scale=scale))
+y = pweibull(x, shape=shape, scale=scale)
+z = dweibull(x, shape=shape, scale=scale)
+
+df <- data.frame(cbind(x,y,z))
+
+df %>%
+  mjs_plot(x = x, y = y) %>%
+  mjs_labs(x = "Weekly execusion", y = "Unreliablity") %>% 
+  mjs_line() %>%
+  mjs_add_line(z) %>% 
+  mjs_add_legend(legend = c("Weibull PDF", "Weibull CDF/ RC"))
+```
+
+Before going into the response curve we need to understand some probability distribution and their properties. 
+
+__Exponential Distribution:__
+
+Exponential distribution is a special case of Weibull distribution. When $\beta \; = \; 1$ and $\gamma \; = \;0$ in  three parameters weibull distribution it becomes an exponential distribution with $\alpha$ and it is written as $X \sim Exp(\alpha)$. Pobability distribution of an exponential distribution is as follows:
+
+$$f_X(x) = P_X(X = x) = \frac{1}{\alpha} e^{\frac{-x}{\alpha}} \; where \; x \ge 0,\; \alpha  > 0$$
+
+The CDF or cumulative distribution function of the exponential distribution is as follows:
+
+$$F_X(x) = P_X(X \le x) = \int_0^x f_X(x)dx =  1 - e^{\frac{-x}{\alpha}}$$
+
+__Log-Normal Distributiion:__
+
+This is not a direct realtionship but this is an approximate realationship between Weibull and the Log-Normal distribution. When Shape parameter of a Weibull distribution is 2 then it follows log normal distribution approximately. PDF of the log normal distribution is as follows:
+
+$$f_X(x) = P_X(X = x) = \frac {1}{x\sigma {\sqrt {2\pi }}} \; e^{-{\frac{\ln(x-\mu)^{2}}{2\sigma ^{2}}}} \; where \; \mu \in (-\infty ,+\infty ), \; \sigma >0 \;and \; x \in (0 ,+\infty )$$
+
+
+CDF of the distribution is as follows:
+
+$$F_X(x) = P_X(X \le x) = \frac{1}{2}+\frac{1}{2} erf{\Big[}\frac{\ln(x-\mu)}{{\sqrt {2}}\sigma}{\Big]}$$
+
+__Normal Distribution:__
+
+Normal distribution is also a approximation of the Weibull distribution. When $3 < \beta <4$ Weibull and Normal distribution is approximately behaves in a similar manner. PDF of a Normal distribution is as follows:
+
+$$f_X(x) = P_X(X = x) = \frac {1}{\sigma {\sqrt {2\pi }}} \; e^{-{\frac{(x-\mu)^{2}}{2\sigma ^{2}}}} \; where \; \mu \in (-\infty ,+\infty ), \; \sigma >0 \;and \; x \in (-\infty ,+\infty )$$
+CDF of the Normal distribution is as follows:
+
+$$F_X(x) = P_X(X \le x) = {\frac{1}{2}[1+erf(\frac{x-\mu }{\sigma \sqrt{2}})}]$$
+
+
+__Weibull Distribution:__ There are majorly two version of the Weibull Distribution is used in Marketing Mix to calculate the respose curve. Three parameters Weibull Distribution is used to calculate the Lift Over Core and 2-parameter distribution is used to Calculate the Lift. Three parameters of the Weibull distribution are as followws: $\alpha : Scale$, $\beta :Shape$ and $\gamma : Location$. The PDF of the three parameter Weibull distribution is as follows:
+
+
+$$f_X(x) = \frac{\beta}{\alpha}{\Big(}\frac{x - \gamma}{\alpha}{\Big)}^{\beta - 1} e^{{{\Big(}-\frac{x-\gamma}{\alpha}}{\Big)}^{\beta}}$$
+
+CDF of the three parameters weibull distribution as as follows:
+
+$$F_X(x) = P_X(X \le x) = \int_0^x f_X(x)dx =  1 - {e^{\Big{(}\frac{-(x-\gamma)}{\alpha}\Big{)}}}^{\beta}$$
+
+In this equation if we put $\gamma = 0$ then it reduces to the 2-parameter weibull distribution which is used to model the unreliablity for life and three parameter weibull distribution is used to calculate the unreliablity for lift-over core. 
+
+$R(x)$ is known as reliablity function and $Q(x)$ is know as the unreliablity. $R(x) = {e^{\Big{(}\frac{-(x-\gamma)}{\alpha}\Big{)}}}^{\beta}$ or $R(x) = 1 - Q(x)$ , where as $Q(x)$ is defined as $$Q(x) = F_X(x) = P_X(X \le x) = \int_0^x f_X(x)dx =  1 - {e^{\Big{(}\frac{-(x-\gamma)}{\alpha}\Big{)}}}^{\beta}$$.
+
+In reliablity theory $R(t)$ defined as $Reliablity \; = \; 1 \; - \; Probability \; of \; Failure$. Here in this context probability of failure can be thought as there will be no incremental for certain execusion. $Q(x)$ or unreliablity can be thought as the probability  of for certain level of execusion there will be any incremental. Hence total possible incremental times probability will give the amount of incremental to be expected as certain level of execusion. Incremental is nothing but a scaled unreliality. The nature of curve for incremental and unreliablity remains ame where magnitude varies due to the multiplier. In generalc ase, this multiplier is nothing but the regression coefficient derived from the modeling phase and some other adjustment factors acounting base change, effectiveness change for certain tactic, seasonality factor and others.
+

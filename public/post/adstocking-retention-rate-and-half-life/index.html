@@ -208,7 +208,7 @@
             <span class="icon icon-google" aria-hidden="true"></span>
           </a>
         </li><li class="social-item">
-          <a href="//www.instagram.com/pandalearnstocode" title="Instagram" aria-label="Instagram">
+          <a href="//www.instagram.com/pdlearns2code" title="Instagram" aria-label="Instagram">
             <span class="icon icon-instagram" aria-hidden="true"></span>
           </a>
         </li><li class="social-item">
@@ -254,26 +254,22 @@
 
 <p><strong>Simple addtive model adstock:</strong></p>
 
-<p>This is the most popular for of the adstocking in current practise for addtive models. Using recurssion one can easliy derive the following result:</p>
-
-<p><code>$$ac_{it} \; = c_{it} + ac_{i(t-1)} \times  rr_i$$</code>
+<p>This is the most popular for of the adstocking in current practise for addtive models. Using recurssion one can easliy derive the following result:
+<code>$$ac_{it} \; = c_{it} + ac_{i(t-1)} \times  rr_i$$</code>
 <code>$$ac_{it} \; = c_{it} + (c_{i(t-1)} + ac_{i(t-2)} \times  rr_i) \times  rr_i$$</code>
 <code>$$\dots$$</code>
 <code>$$ac_{it} \; = \sum_{T=0}^{t} rr_i^{T-i} \times ac_{i(t-T)}$$</code></p>
 
 <p>In case of a logaritmmic model here is the following transformation which has is used:</p>
 
-<p><strong>Logarithmic adstocking:</strong></p>
+<p><strong>Logarithmic adstocking:</strong>
+<code>$$ac_{it} \; = log(c_{it}) + ac_{i(t-1)} \times  rr_i$$</code></p>
 
-<p><code>$$ac_{it} \; = log(c_{it}) + ac_{i(t-1)} \times  rr_i$$</code></p>
+<p><strong>Negative exponential adstocking:</strong>
+<code>$$ac_{it} \; = (1 - \exp(- shape \times c_{it})) + ac_{i(t-1)} \times  rr_i$$</code></p>
 
-<p><strong>Negative exponential adstocking:</strong></p>
-
-<p><code>$$ac_{it} \; = (1 - \exp(- shape \times c_{it})) + ac_{i(t-1)} \times  rr_i$$</code></p>
-
-<p><strong>S-curve adstocking:</strong></p>
-
-<p><code>$$ac_{it} \; = \frac{1}{(1 + \exp(- shape \times c_{it}))} + ac_{i(t-1)} \times  rr_i$$</code></p>
+<p><strong>S-curve adstocking:</strong>
+<code>$$ac_{it} \; = \frac{1}{(1 + \exp(- shape \times c_{it}))} + ac_{i(t-1)} \times  rr_i$$</code></p>
 
 <p>Here in this following section we will code this formula in R and Python in order get out hands dirty. We will try to understand the nature of these adstocking by visualization and looking at their symmary statistics and try to infer that how does that impact out analysis further in the modeling and planning stage.</p>
 </article>
@@ -295,7 +291,7 @@
 
 
 <footer class="site-footer">
-  <p>© 2017-2018 Aritra Biswas</p>
+  <p>© 2017-2019 Aritra Biswas</p>
   <p>Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> with theme <a href="https://github.com/laozhu/hugo-nuo" target="_blank" rel="noopener">Nuo</a>.</p>
   
 </footer>

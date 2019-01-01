@@ -33,28 +33,21 @@ __Adstocked Causal:__ Here for refence purpose we will use $c_t$ for causal at t
 __Simple addtive model adstock:__  
 
 This is the most popular for of the adstocking in current practise for addtive models. Using recurssion one can easliy derive the following result:
-
 `$$ac_{it} \; = c_{it} + ac_{i(t-1)} \times  rr_i$$`
 `$$ac_{it} \; = c_{it} + (c_{i(t-1)} + ac_{i(t-2)} \times  rr_i) \times  rr_i$$`
 `$$\dots$$`
 `$$ac_{it} \; = \sum_{T=0}^{t} rr_i^{T-i} \times ac_{i(t-T)}$$`
 
-In case of a logaritmmic model here is the following transformation which has is used:
-
+In case of a logaritmmic model here is the following transformation which has is used:  
 
 __Logarithmic adstocking:__
-
 `$$ac_{it} \; = log(c_{it}) + ac_{i(t-1)} \times  rr_i$$`
 
 __Negative exponential adstocking:__
-
 `$$ac_{it} \; = (1 - \exp(- shape \times c_{it})) + ac_{i(t-1)} \times  rr_i$$`
 
 __S-curve adstocking:__
-
 `$$ac_{it} \; = \frac{1}{(1 + \exp(- shape \times c_{it}))} + ac_{i(t-1)} \times  rr_i$$`
-
-
 
 Here in this following section we will code this formula in R and Python in order get out hands dirty. We will try to understand the nature of these adstocking by visualization and looking at their symmary statistics and try to infer that how does that impact out analysis further in the modeling and planning stage. 
 
