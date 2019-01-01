@@ -1,0 +1,53 @@
+---
+title: 'Welcome to the desert of real: Why lists are better?'
+author: Aritra Biswas
+date: '2019-01-01'
+slug: welcome-to-the-desert-of-real-why-lists-are-better
+categories: []
+tags: []
+---
+
+In R community most of the users are quite familiar with data.frame and vectors. 
+The most import characteristic of the both of the above mentioned data structure is 
+the symmetry. The feature makes it easy to work with these form of data but it is 
+important to remember that in real life data is not that well organised. List allows you to 
+store different data type in different elements of a list and the most important part is 
+that the dimension of each element can be different from one another. This gives you 
+one level of abstraction which is required for while working with different data structure. 
+
+Most of the people avoid using list mainly because of its naming convention, sub-setting and 
+from the convention that iterating over a list is quite slower than the other data structures. 
+But here in this article we will try to explore that with the new set of tools purrr, purrlyr, 
+repurrrsive and furrr one can use the power of functional programming to bring a level of abstraction in their code
+without learning a lot. This will make your code easy to read and less messy. 
+
+Here are a few points to remember if you are considering working with lists:
+
+* Consider using tidyverse. The set of tools available in tidyverse will make you life a lot easier. 
+* If your list does not have names. Name the list with correct name to begin with. Working with named
+list is easier than the unnamed lists. `set_names()` is a useful function in this context.
+* It is easy to subset data where the list is named. 
+* Try to use pipe function as much as possible. It will increase readability of your code. 
+* `map()` is a very useful and powerful tool. remember map() will always return a list. Instate of storing that 
+list in an object and then converting them into the other data type use other variant of the map function such as 
+map_df, map_dbl, map_int, map_lgl etc. This will reduce the number of lines in code and it will be faster. 
+* Pipes can be used within a `map()` function. 
+* Purrr is a very useful tool for simulation and handling multiple models. Here in the later section of this article we 
+will demonstrate how this can be used to simulate data from various distribution.
+* Purrr works fine with shiny and plumber. 
+* `as.integer()` and `map_int()` is not exactly the same. as.integer() will round off a number to the largest integer number but 
+map_int will throw an error if one passes a wrong data type.
+* More complex version of `map()` is `map2() and `pmap()`. If you have 2 input you can safely use map2(). 
+For parameters more than three in a function one has to use `pmap()`.
+* To access lists within list in map2 use .x and .y. But in pmap one has to have named lists. they can be used directly using their name. 
+* safely is used to try catch some error in the map function. there is one if and otherwise part of this function. successful execusions are 
+stored in "result" and errors are stored in a list called "errors". use transpose function to check the respective errors. 
+* Other than `safely()` one can use `possibly()` to get only the result but not the 'errors' list.
+* `walk()` is an important function in purrr. It makes output readable. 
+
+
+General workflow:
+
+1. Name the list. 
+2. 
+

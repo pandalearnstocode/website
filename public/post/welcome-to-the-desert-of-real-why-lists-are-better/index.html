@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8" />
+
+  
+  <title>Welcome to the desert of real: Why lists are better?</title>
+
+  
+  
+  <link href="//cdn.jsdelivr.net" rel="dns-prefetch">
+  <link href="//cdnjs.cloudflare.com" rel="dns-prefetch">
+  <link href="//at.alicdn.com" rel="dns-prefetch">
+  <link href="//fonts.googleapis.com" rel="dns-prefetch">
+  <link href="//fonts.gstatic.com" rel="dns-prefetch">
+  
+  
+  
+  <link href="//www.google-analytics.com" rel="dns-prefetch">
+  
+
+  
+
+  
+  <meta name="author" content="Aritra Biswas">
+  <meta name="description" content="In R community most of the users are quite familiar with data.frame and vectors. The most import characteristic of the both of the above mentioned data structure is the symmetry. The feature makes it easy to work with these form of data but it is important to remember that in real life data is not that well organised. List allows you to store different data type in different elements of a list and the most important part is that the dimension of each element can be different from one another.">
+
+  
+  
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@pdlearnstocode">
+    <meta name="twitter:title" content="Welcome to the desert of real: Why lists are better?">
+    <meta name="twitter:description" content="In R community most of the users are quite familiar with data.frame and vectors. The most import characteristic of the both of the above mentioned data structure is the symmetry. The feature makes it easy to work with these form of data but it is important to remember that in real life data is not that well organised. List allows you to store different data type in different elements of a list and the most important part is that the dimension of each element can be different from one another.">
+    <meta name="twitter:image" content="/images/avatar.jpg">
+  
+
+  
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Welcome to the desert of real: Why lists are better?">
+  <meta property="og:description" content="In R community most of the users are quite familiar with data.frame and vectors. The most import characteristic of the both of the above mentioned data structure is the symmetry. The feature makes it easy to work with these form of data but it is important to remember that in real life data is not that well organised. List allows you to store different data type in different elements of a list and the most important part is that the dimension of each element can be different from one another.">
+  <meta property="og:url" content="/post/welcome-to-the-desert-of-real-why-lists-are-better/">
+  <meta property="og:image" content="/images/avatar.jpg">
+
+
+
+
+<meta name="generator" content="Hugo 0.53">
+
+
+<link rel="canonical" href="/post/welcome-to-the-desert-of-real-why-lists-are-better/">
+
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="format-detection" content="telephone=no,email=no,adress=no">
+<meta http-equiv="Cache-Control" content="no-transform">
+
+
+<meta name="robots" content="index,follow">
+<meta name="referrer" content="origin-when-cross-origin">
+<meta name="google-site-verification" content="_moDmnnBNVLBN1rzNxyGUGdPHE20YgbmrtzLIbxaWFc">
+
+
+
+
+
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Aritra Biswas">
+<meta name="msapplication-tooltip" content="Aritra Biswas">
+<meta name='msapplication-navbutton-color' content="#5fbf5e">
+<meta name="msapplication-TileColor" content="#5fbf5e">
+<meta name="msapplication-TileImage" content="/images/tile-image-windows.png">
+<link rel="icon" href="/images/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+<link rel="icon" sizes="192x192" href="/images/touch-icon-android.png">
+<link rel="apple-touch-icon" href="/images/touch-icon-apple.png">
+
+
+<link rel="preload" href="/styles/main.min.css" as="style">
+<link rel="preload" href="https://fonts.googleapis.com/css?family=Lobster" as="style">
+<link rel="preload" href="/images/avatar.jpg" as="image">
+<link rel="preload" href="/images/grey-prism.svg" as="image">
+
+
+<style>
+  body {
+    background: rgb(244, 243, 241) url('/images/grey-prism.svg') repeat fixed;
+  }
+</style>
+<link rel="stylesheet" href="/styles/main.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.2/dist/medium-zoom.min.js"></script>
+
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/video.js@7.3.0/dist/video-js.min.css">
+
+
+
+  
+  
+<!--[if lte IE 8]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/videojs-ie8@1.1.2/dist/videojs-ie8.min.js"></script>
+<![endif]-->
+
+<!--[if lte IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/eligrey-classlist-js-polyfill@1.2.20180112/classList.min.js"></script>
+<![endif]-->
+
+
+</head>
+  <body>
+    
+    <div class="suspension">
+      <a role="button" aria-label="Go to top" title="Go to top" class="to-top is-hide"><span class="icon icon-up" aria-hidden="true"></span></a>
+      
+        
+      
+    </div>
+    
+    
+  <header class="site-header">
+  <img class="avatar" src="/images/avatar.jpg" alt="Avatar">
+  
+  <h2 class="title">Aritra Biswas</h2>
+  
+  <p class="subtitle">~ Stay Hungry Stay Foolish ~</p>
+  <button class="menu-toggle" type="button" aria-label="Main Menu" aria-expanded="false" tab-index="0">
+    <span class="icon icon-menu" aria-hidden="true"></span>
+  </button>
+
+  <nav class="site-menu collapsed">
+    <h2 class="offscreen">Main Menu</h2>
+    <ul class="menu-list">
+      
+      
+      
+      
+        <li class="menu-item
+          
+          
+           is-active">
+          <a href="/">Home</a>
+        </li>
+      
+        <li class="menu-item
+          
+          
+          ">
+          <a href="https://github.com/laozhu">Works</a>
+        </li>
+      
+        <li class="menu-item
+          
+          
+          ">
+          <a href="/tags/">Tags</a>
+        </li>
+      
+        <li class="menu-item
+          
+          
+          ">
+          <a href="/links/">Links</a>
+        </li>
+      
+        <li class="menu-item
+          
+          
+          ">
+          <a href="/about/">About</a>
+        </li>
+      
+    </ul>
+  </nav>
+  <nav class="social-menu collapsed">
+    <h2 class="offscreen">Social Networks</h2>
+    <ul class="social-list"><li class="social-item">
+          <a href="mailto:pandalearnstocode@gmail.com" title="Email" aria-label="Email">
+            <span class="icon icon-email" aria-hidden="true"></span>
+          </a>
+        </li><li class="social-item">
+          <a href="//github.com/pandalearnstocode" title="GitHub" aria-label="GitHub">
+            <span class="icon icon-github" aria-hidden="true"></span>
+          </a>
+        </li><li class="social-item">
+          <a href="//twitter.com/pdlearnstocode" title="Twitter" aria-label="Twitter">
+            <span class="icon icon-twitter" aria-hidden="true"></span>
+          </a>
+        </li><li class="social-item">
+          <a href="//www.facebook.com/pandalearnstocode" title="Facebook" aria-label="Facebook">
+            <span class="icon icon-facebook" aria-hidden="true"></span>
+          </a>
+        </li><li class="social-item">
+          <a href="//plus.google.com/110877255891631975552" title="Google+" aria-label="Google+">
+            <span class="icon icon-google" aria-hidden="true"></span>
+          </a>
+        </li><li class="social-item">
+          <a href="//www.instagram.com/pdlearns2code" title="Instagram" aria-label="Instagram">
+            <span class="icon icon-instagram" aria-hidden="true"></span>
+          </a>
+        </li><li class="social-item">
+          <a href="//stackoverflow.com/users/9984132/pandalearnstocode" title="stackOverflow"  aria-label="stackOverflow">
+            <span class="icon icon-stackoverflow" aria-hidden="true"></span>
+          </a>
+        </li><li class="social-item">
+          <a href="//www.linkedin.com/in/pandalearnstocode" title="Linkedin" aria-label="Linkedin">
+            <span class="icon icon-linkedin" aria-hidden="true"></span>
+          </a>
+        </li></ul>
+  </nav>
+</header>
+
+  <section class="main post-detail">
+    <header class="post-header">
+      <h1 class="post-title">Welcome to the desert of real: Why lists are better?</h1>
+      <p class="post-meta">@Aritra Biswas · Jan 1, 2019 · 3 min read</p>
+    </header>
+    <article class="post-content">
+
+
+<p>In R community most of the users are quite familiar with data.frame and vectors.
+The most import characteristic of the both of the above mentioned data structure is
+the symmetry. The feature makes it easy to work with these form of data but it is
+important to remember that in real life data is not that well organised. List allows you to
+store different data type in different elements of a list and the most important part is
+that the dimension of each element can be different from one another. This gives you
+one level of abstraction which is required for while working with different data structure.</p>
+<p>Most of the people avoid using list mainly because of its naming convention, sub-setting and
+from the convention that iterating over a list is quite slower than the other data structures.
+But here in this article we will try to explore that with the new set of tools purrr, purrlyr,
+repurrrsive and furrr one can use the power of functional programming to bring a level of abstraction in their code
+without learning a lot. This will make your code easy to read and less messy.</p>
+<p>Here are a few points to remember if you are considering working with lists:</p>
+<ul>
+<li>Consider using tidyverse. The set of tools available in tidyverse will make you life a lot easier.</li>
+<li>If your list does not have names. Name the list with correct name to begin with. Working with named
+list is easier than the unnamed lists. <code>set_names()</code> is a useful function in this context.</li>
+<li>It is easy to subset data where the list is named.</li>
+<li>Try to use pipe function as much as possible. It will increase readability of your code.</li>
+<li><code>map()</code> is a very useful and powerful tool. remember map() will always return a list. Instate of storing that
+list in an object and then converting them into the other data type use other variant of the map function such as
+map_df, map_dbl, map_int, map_lgl etc. This will reduce the number of lines in code and it will be faster.</li>
+<li>Pipes can be used within a <code>map()</code> function.</li>
+<li>Purrr is a very useful tool for simulation and handling multiple models. Here in the later section of this article we
+will demonstrate how this can be used to simulate data from various distribution.</li>
+<li>Purrr works fine with shiny and plumber.</li>
+<li><code>as.integer()</code> and <code>map_int()</code> is not exactly the same. as.integer() will round off a number to the largest integer number but
+map_int will throw an error if one passes a wrong data type.</li>
+<li>More complex version of <code>map()</code> is <code>map2() and</code>pmap()<code>. If you have 2 input you can safely use map2().  For parameters more than three in a function one has to use</code>pmap()`.</li>
+<li>To access lists within list in map2 use .x and .y. But in pmap one has to have named lists. they can be used directly using their name.</li>
+<li>safely is used to try catch some error in the map function. there is one if and otherwise part of this function. successful execusions are
+stored in “result” and errors are stored in a list called “errors”. use transpose function to check the respective errors.</li>
+<li>Other than <code>safely()</code> one can use <code>possibly()</code> to get only the result but not the ‘errors’ list.</li>
+<li><code>walk()</code> is an important function in purrr. It makes output readable.</li>
+</ul>
+<p>General workflow:</p>
+<ol style="list-style-type: decimal">
+<li>Name the list.</li>
+<li></li>
+</ol>
+</article>
+    <footer class="post-footer">
+      
+      <ul class="post-tags">
+        
+      </ul>
+      
+      <p class="post-copyright">
+        © This post is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License，please give source if you wish to quote or reproduce.
+      </p>
+    </footer>
+    
+      
+    
+  </section>
+  
+
+
+<footer class="site-footer">
+  <p>© 2017-2019 Aritra Biswas</p>
+  <p>Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> with theme <a href="https://github.com/laozhu/hugo-nuo" target="_blank" rel="noopener">Nuo</a>.</p>
+  
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/smooth-scroll@15.0.0/dist/smooth-scroll.min.js"></script>
+
+
+
+<script async src="https://cdn.jsdelivr.net/npm/video.js@7.3.0/dist/video.min.js"></script>
+
+
+
+
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [['$','$'], ['\\(','\\)']],
+      displayMath: [['$$','$$'], ['\\[','\\]']],
+      processEscapes: true,
+      processEnvironments: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+      TeX: { equationNumbers: { autoNumber: "AMS" },
+      extensions: ["AMSmath.js", "AMSsymbols.js"] }
+    },
+  });
+</script>
+<script type="text/x-mathjax-config">
+  // Fix <code> tags after MathJax finishes running. This is a
+  // hack to overcome a shortcoming of Markdown. Discussion at
+  // https://github.com/mojombo/jekyll/issues/199
+  MathJax.Hub.Queue(() => {
+    MathJax.Hub.getAllJax().map(v => v.SourceElement().parentNode.className += ' has-jax');
+  });
+</script>
+
+
+
+<script src="/scripts/index.min.js"></script>
+
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-131453565-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+
+
+
+
+  </body>
+</html>

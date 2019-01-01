@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© This post is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License，please give source if you wish to quote or reproduce.</copyright>
-    <lastBuildDate>Sun, 30 Dec 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 01 Jan 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Welcome to the desert of real: Why lists are better?</title>
+      <link>/post/welcome-to-the-desert-of-real-why-lists-are-better/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/welcome-to-the-desert-of-real-why-lists-are-better/</guid>
+      <description>In R community most of the users are quite familiar with data.frame and vectors. The most import characteristic of the both of the above mentioned data structure is the symmetry. The feature makes it easy to work with these form of data but it is important to remember that in real life data is not that well organised. List allows you to store different data type in different elements of a list and the most important part is that the dimension of each element can be different from one another.</description>
+    </item>
     
     <item>
       <title>Reliability theory 101</title>
